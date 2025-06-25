@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <loading-indicator></loading-indicator>
+    <note-appbar></note-appbar>
+    
+    <div class="container">
+        <div class="sidebar">
+            <note-search></note-search>
+            <note-category active="active"></note-category>
+        </div>
+        
+        <main class="content">
+            <note-form></note-form>
+            
+            <h2 class="section-title">Active Notes</h2>
+            <div class="notes-grid" id="active-notes"></div>
+            
+            <h2 class="section-title">Archived Notes</h2>
+            <div class="notes-grid" id="archived-notes"></div>
+        </main>
+    </div>
+</body>
+</html>
